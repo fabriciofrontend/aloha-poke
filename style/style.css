@@ -189,17 +189,18 @@ section.sobre {
   max-width: 100%;
   padding-top: 60px;
   padding-bottom: 30px;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   text-align: center;
 }
 
 section.sobre div.sobre-mestre {
   text-align: center;
-  margin-bottom: 40px;
+  margin-bottom: 50px;
 }
 
 section.sobre div.sobre-mestre img {
-border: 2px solid ;
+border: 3px solid ;
+
 }
 
 section.sobre div.sobre-mestre h2 {
@@ -213,7 +214,7 @@ section.sobre div.sobre-mestre h2 {
 
 section.cardapio {
   max-width: 100%;
-  padding-top: 60px;
+  /* padding-top: 20px; */
   padding-bottom: 30px;
   margin-bottom: 20px;
   text-align: center;
