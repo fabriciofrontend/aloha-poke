@@ -1,0 +1,72 @@
+/*-------------ELEMENTOS DO HEADER—----------*/
+@media screen and (max-width: 630px) {
+  /*-------MENU HAMBURGUER-------*/
+  header nav#nav-esq {
+    justify-content: space-between;
+  }
+
+  /*PARA ANIMACAO JS*/
+  header nav#nav-esq ul#icone-menu {
+    display: flex;
+  }
+
+  header nav#nav-esq ul#icone-menu li#menuX {
+    display: none;
+  }
+
+  /*--------MENU—--------*/
+  header nav#nav-esq ul#menu-principal {
+    flex-direction: column;
+    width: 80%;
+    height: 85vh;
+    background: linear-gradient(#d0f2f2 5%, #055902 30%, #f2cb05 90%);
+    padding-top: 0.5rem;
+
+    position: absolute;
+    top: 9.3rem;
+    right: 0;
+    z-index: 999;
+
+    display: none;
+  }
+
+  header nav#nav-esq ul#menu-principal li {
+    margin: 0.5rem;
+ 
+  }
+
+  header nav#nav-esq ul#menu-principal li a {
+    font-size: 120%;
+  }
+}
+
+/*responsividade da capa no header*/
+@media screen and (max-width: 1200px) {
+  header {
+    background: url(../img/headerCapaM.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  header {
+    background: url(../img/headerCapaP.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+  }
+}
+
+/*-------------NAVBAR—-----------*/
+/*diminuir o tamanho da letra*/
+@media screen and (max-width: 110px) {
+  header nav#nav-esq ul#menu-principal li a {
+    font-size: 90%;
+  }
+}
+
+/*diminuir o tamanho da logo*/
+
+

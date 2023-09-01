@@ -1,0 +1,184 @@
+/* COLOR
+#558C03
+#A1BF73
+#83A638
+#97BF04
+#F2F2F2
+
+#D0F2F2
+#055902
+#F2CB05
+#F2B705
+#F24B4B
+*/
+
+/* FONTS
+font-family: 'Assistant', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Rubik', sans-serif;
+*/
+
+/*GLOBAL ADJUSTMENTS*/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-family: "Poppins" cursive;
+  text-shadow: 4px 4px 6px #000;
+  font-weight: 700;
+  font-size: max(44px, 5.2vw);
+}
+
+h2 {
+  font-family: "Roboto", cursive;
+  text-shadow: 4px 4px 6px #464646;
+  font-weight: 700;
+  font-size: max(20px, 2.8vw);
+}
+
+/*-----------BOTÃO CHAMADA-------------*/
+
+div.chamada a {
+  font-family:"Rubik", cursive;
+  font-size: max(16px, 1.8vw);
+  color:#F2F2F2 ;
+  text-decoration: none;
+  padding: 10px 80px;
+  border-radius: 30px;
+  font-weight: 600;
+  background:#F24B4B;
+
+  display: inline-block;
+
+  /* animation-name: HeaderA-moveParaCima;
+  animation-duration: 1s;
+  animation-delay: 1s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: backwards;
+  transition: .3s ease-in-out; */
+}
+
+div.chamada a:hover {
+  opacity: .8;
+}
+
+/*--------HEADER-------*/
+header {
+  background: url(../img/headerCapaG.png);
+  max-width: 100%;
+  height: 90vh;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  padding: 20px;
+
+  position: relative;
+}
+
+/*--------NAVBAR-------*/
+header nav#nav-esq {
+  width: 100%;
+  height: 150px;
+
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+ 
+}
+
+header nav#nav-esq div#logo {
+  max-width: 100px;
+  max-height: 120px;
+  margin-left: 4rem;
+}
+
+header nav#nav-esq div#logo img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+/*--------NAVBAR - MENU HAMBURGUER-------*/
+header nav#nav-esq ul#icone-menu {
+  display: none;
+}
+
+header nav#nav-esq ul#icone-menu li {
+  list-style: none;
+}
+
+header nav#nav-esq ul#icone-menu li ion-icon {
+  font-size: 50px;
+  color: #000;
+  margin-right: 2rem;
+}
+
+/*--------MENU PRINCIPAL-------*/
+header nav#nav-esq ul#menu-principal {
+  margin-left: 5rem;
+
+  display: flex;
+  flex-flow: row wrap;
+}
+
+header nav#nav-esq ul#menu-principal li {
+  list-style: none;
+  margin-right: 2rem;
+}
+
+header nav#nav-esq ul#menu-principal li a {
+  text-decoration: none;
+  color: #F2F2F2;
+  font-size: 110%;
+  text-shadow: 4px, 6px, 10px, #000;
+  padding-bottom: 10px;
+  transition: 0.3s ease-out;
+  font-weight: 600;
+}
+
+header nav#nav-esq ul#menu-principal li a:hover {
+  border-bottom: 1px solid #000;
+  opacity: 0.6;
+}
+
+/*--------CHAMADA-------*/
+header div.chamada {
+  position: absolute;
+  width: 100%;
+  height: 300px;
+  text-align: center;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%); /*bem centralizado*/
+}
+
+header div.chamada h1 {
+  color:  #97BF04;
+  font-family: "Assistant", cursive;
+  text-shadow: 4px 4px 6px #000;
+  font-weight: 700;
+  font-size: max(44px, 5.2vw);
+
+  /* animation-name: HeaderH1-moverParaDireita;
+  animation-duration: 2s;
+  animation-timing-function: ease-out; */
+}
+
+header div.chamada h2 {
+  color: #D0F2F2;
+  font-family: "Roboto", cursive;
+  text-shadow: 4px 4px 6px #000;
+  font-weight: 700;
+  font-size: max(20px, 2.8vw);
+
+  margin: 10px 50px;
+
+  /* animation-name: HeaderH1-moverParaEsquerda;
+  animation-duration: 1.5s;
+  animation-delay: 0.5s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: backwards; */
+}
