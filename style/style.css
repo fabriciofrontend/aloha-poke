@@ -43,14 +43,14 @@ h2 {
 /*-----------BOTÃO CHAMADA-------------*/
 
 div.chamada a {
-  font-family:"Rubik", cursive;
+  font-family: "Rubik", cursive;
   font-size: max(16px, 1.8vw);
-  color:#F2F2F2 ;
+  color: #f2f2f2;
   text-decoration: none;
   padding: 10px 80px;
   border-radius: 30px;
   font-weight: 600;
-  background:#F24B4B;
+  background: #f24b4b;
 
   display: inline-block;
 
@@ -63,7 +63,7 @@ div.chamada a {
 }
 
 div.chamada a:hover {
-  opacity: .8;
+  opacity: 0.8;
 }
 
 /*--------HEADER-------*/
@@ -87,7 +87,6 @@ header nav#nav-esq {
   display: flex;
   flex-flow: row;
   justify-content: space-between;
- 
 }
 
 header nav#nav-esq div#logo {
@@ -131,7 +130,7 @@ header nav#nav-esq ul#menu-principal li {
 
 header nav#nav-esq ul#menu-principal li a {
   text-decoration: none;
-  color: #F2F2F2;
+  color: #f2f2f2;
   font-size: 110%;
   text-shadow: 4px, 6px, 10px, #000;
   padding-bottom: 10px;
@@ -156,7 +155,7 @@ header div.chamada {
 }
 
 header div.chamada h1 {
-  color:  #97BF04;
+  color: #97bf04;
   font-family: "Assistant", cursive;
   text-shadow: 4px 4px 6px #000;
   font-weight: 700;
@@ -168,7 +167,7 @@ header div.chamada h1 {
 }
 
 header div.chamada h2 {
-  color: #D0F2F2;
+  color: #d0f2f2;
   font-family: "Roboto", cursive;
   text-shadow: 4px 4px 6px #000;
   font-weight: 700;
@@ -181,4 +180,51 @@ header div.chamada h2 {
   animation-delay: 0.5s;
   animation-timing-function: ease-out;
   animation-fill-mode: backwards; */
+}
+/*______________________________________*/
+/*               SOBRE                */
+/*______________________________________*/
+
+section.sobre {
+  max-width: 100%;
+  padding-top: 60px;
+  padding-bottom: 30px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+section.sobre div.sobre-mestre {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+section.sobre div.sobre-mestre img {
+border: 2px solid ;
+}
+
+section.sobre div.sobre-mestre h2 {
+  font-size: max(20px, 1.8vw);
+  margin-top: 10px;
+}
+
+/*______________________________________*/
+/*               CARDAPIO                 */
+/*______________________________________*/
+
+section.cardapio {
+  max-width: 100%;
+  padding-top: 60px;
+  padding-bottom: 30px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+section.cardapio div.cardapio-mestre {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+section.cardapio div.cardapio-mestre h2 {
+  font-size: max(20px, 1.8vw);
+  margin-top: 10px;
 }
