@@ -41,29 +41,33 @@ h2 {
 }
 
 /*-----------BOTÃO CHAMADA-------------*/
-
 div.chamada a {
-  font-family: "Rubik", cursive;
-  font-size: max(16px, 1.8vw);
-  color: #f2f2f2;
+  background: linear-gradient(to bottom, rgba(151, 191, 4), rgba(242, 75, 75));
+  color: #000;
+  border-radius: 5px;
+  border: 1px solid;
+  transition-duration: 0.4s;
+  width: 130px;
+  font-size: 20px;
+  padding: 10px 100px;
   text-decoration: none;
-  padding: 10px 80px;
+  cursor: pointer;
   border-radius: 30px;
-  font-weight: 600;
-  background: #f24b4b;
+  font-family: "Rubik", cursive;
+  font-size: max(20px, 1.8vw);
+}
 
-  display: inline-block;
-
-  /* animation-name: HeaderA-moveParaCima;
+/* animation-name: HeaderA-moveParaCima;
   animation-duration: 1s;
   animation-delay: 1s;
   animation-timing-function: ease-out;
   animation-fill-mode: backwards;
   transition: .3s ease-in-out; */
-}
 
 div.chamada a:hover {
   opacity: 0.8;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  cursor: pointer;
 }
 
 /*--------HEADER-------*/
@@ -157,8 +161,7 @@ header div.chamada {
 header div.chamada h1 {
   color: #97bf04;
   font-family: "Assistant", cursive;
-  text-shadow: 4px 4px 6px #000;
-  font-weight: 700;
+  font-weight: 800;
   font-size: max(44px, 5.2vw);
 
   /* animation-name: HeaderH1-moverParaDireita;
@@ -169,7 +172,7 @@ header div.chamada h1 {
 header div.chamada h2 {
   color: #d0f2f2;
   font-family: "Roboto", cursive;
-  text-shadow: 4px 4px 6px #000;
+  /* text-shadow: 4px 4px 6px #000; */
   font-weight: 700;
   font-size: max(20px, 2.8vw);
 
@@ -182,30 +185,55 @@ header div.chamada h2 {
   animation-fill-mode: backwards; */
 }
 /*______________________________________*/
-/*               SOBRE                */
+/*                 SOBRE                */
 /*______________________________________*/
 
 section.sobre {
   max-width: 100%;
-  padding-top: 60px;
+  padding-top: 40px;
   padding-bottom: 30px;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
   text-align: center;
 }
 
-section.sobre div.sobre-mestre {
+section.sobre h2 {
+  margin-left: 2rem;
+  color: #055902;
+  text-align: left;
+  font-size: max(30px, 2vw);
+  margin-top: auto;
+}
+
+section.sobre div.sobre-container {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  margin-bottom: 5px;
+
   text-align: center;
-  margin-bottom: 50px;
-}
-
-section.sobre div.sobre-mestre img {
-border: 3px solid ;
-
-}
-
-section.sobre div.sobre-mestre h2 {
-  font-size: max(20px, 1.8vw);
   margin-top: 10px;
+}
+
+section.sobre div.sobre-container h3 {
+  max-width: 100%;
+  text-align: center;
+  font-size: max(30px, 1.8vw);
+  margin-top: auto;
+  color: #F24B4B;
+  text-shadow: 2px 2px 4px #000;
+}
+
+section.sobre div.sobre-container p {
+  max-width: 90%;
+  margin: auto;
+  color: #000;
+  font-size: max(16px, 1vw);
+}
+
+section.sobre div.sobre-container img {
+  width: 90%;
+  border: 2px solid;
 }
 
 /*______________________________________*/
@@ -213,19 +241,46 @@ section.sobre div.sobre-mestre h2 {
 /*______________________________________*/
 
 section.cardapio {
-  max-width: 100%;
-  /* padding-top: 20px; */
-  padding-bottom: 30px;
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 40px;
   margin-bottom: 20px;
   text-align: center;
 }
-
-section.cardapio div.cardapio-mestre {
-  text-align: center;
-  margin-bottom: 40px;
+section.cardapio h2 {
+  margin-left: 2rem;
+  text-align: left;
+  color: #055902;
 }
 
-section.cardapio div.cardapio-mestre h2 {
-  font-size: max(20px, 1.8vw);
-  margin-top: 10px;
+section.cardapio div.cardapio-container {
+  margin: 20px;
+  text-align: center;
+}
+
+section.cardapio div.cardapio-container h3.cardapio-titulo {
+  text-align: center;
+  font-size: max(25px, 1vw);
+  color: #055902;
+}
+
+section.cardapio div.cardapio-container p.cardapio-texto {
+  text-align: center;
+  font-size: max(15px, 1vw);
+  color: #000000;
+}
+
+section.cardapio div.cardapio-container .cardapio-comprar {
+  border-radius: 5px;
+  border: 2px solid #000000;
+  background: linear-gradient(to bottom, rgba(242, 183, 5), rgba(242, 75, 75));
+  cursor: pointer;
+  transition: 0.4s;
+  color: #000;
+}
+
+section.cardapio div.cardapio-container .cardapio-comprar:hover {
+  opacity: 0.8;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  cursor: pointer;
 }
