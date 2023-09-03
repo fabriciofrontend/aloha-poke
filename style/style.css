@@ -26,7 +26,7 @@ font-family: 'Rubik', sans-serif;
   box-sizing: border-box;
 }
 
-h1 {
+/* h1 {
   font-family: "Poppins" cursive;
   text-shadow: 4px 4px 6px #000;
   font-weight: 700;
@@ -38,7 +38,7 @@ h2 {
   text-shadow: 4px 4px 6px #464646;
   font-weight: 700;
   font-size: max(20px, 2.8vw);
-}
+} */
 
 /*-----------BOTÃO CHAMADA-------------*/
 div.chamada a {
@@ -104,7 +104,7 @@ header nav#nav-esq div#logo img {
   max-height: 100%;
 }
 
-/*--------NAVBAR - MENU HAMBURGUER-------*/
+/*--------MENU HAMBURGUER-------*/
 header nav#nav-esq ul#icone-menu {
   display: none;
 }
@@ -220,7 +220,7 @@ section.sobre div.sobre-container h3 {
   text-align: center;
   font-size: max(30px, 1.8vw);
   margin-top: auto;
-  color: #F24B4B;
+  color: #f24b4b;
   text-shadow: 2px 2px 4px #000;
 }
 
@@ -237,7 +237,7 @@ section.sobre div.sobre-container img {
 }
 
 /*______________________________________*/
-/*               CARDAPIO                 */
+/*               CARDAPIO               */
 /*______________________________________*/
 
 section.cardapio {
@@ -283,4 +283,157 @@ section.cardapio div.cardapio-container .cardapio-comprar:hover {
   opacity: 0.8;
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   cursor: pointer;
+}
+
+/*______________________________________*/
+/*                 FOOTER               */
+/*______________________________________*/
+
+footer {
+  font-family: "Roboto" sans-serif;
+  letter-spacing: 1px;
+  width: 100%;
+  /* background-color: #d0f2f2; */
+}
+
+.footer-link {
+  text-decoration: none;
+}
+
+footer div.footer-content {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 3rem 3.5rem;
+  background-color: #d0f2f2;
+}
+
+footer div.footer-content div.footer-contacts img {
+  width: 100px;
+}
+
+footer div.footer-content div.footer-contacts p {
+  font-size: max(12px, 1vw);
+  margin-bottom: 0.75rem;
+}
+
+.footer-social-midia {
+  display: flex;
+  gap: 1rem;
+  /* margin-top: 1.5rem; */
+}
+
+.footer-social-midia .footer-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2.5rem;
+  width: 2.5rem;
+  color: #f2f2f2;
+  border-radius: 50%;
+  transition: all 0.4s;
+}
+
+.footer-social-midia .footer-link i {
+  font-size: 1.25rem;
+}
+
+.footer-social-midia .footer-link:hover {
+  opacity: 0.8;
+}
+
+#instagram {
+  background: linear-gradient(#7f37c9, #ff2992, #ff9807);
+}
+
+#facebook {
+  background-color: #4267b3;
+}
+
+#whatsapp {
+  background-color: #25d366;
+}
+
+.footer-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  list-style: none;
+}
+
+.footer-list .footer-link {
+  color: #000000;
+  transition: all 0.4s;
+}
+
+.footer-list .footer-link ul h3 {
+  font-size: max(20px, 1vw);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.footer-list .footer-link:hover {
+  color: #055902;
+}
+
+.footer-inscreva {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.footer-inscreva p {
+  color: #000000;
+}
+
+.input-group {
+  display: flex;
+  align-items: center;
+  background-color:#055902;
+  border-radius: 4px;
+}
+
+.input-group input {
+  all: unset;
+  padding: 0.75rem;
+  width: 100%;
+}
+
+ .input-group button {
+  background-color:#000000;
+  border: none; 
+  color:   #f2f2f2;
+  padding: 0px 1.25rem;
+  font-size: 1.125rem;
+  height: 100%;
+  border-radius: 0px 4px 4px 0px;
+  cursor: pointer;
+  transition: all 0.4s;
+}
+
+.input-group button:hover {
+  opacity: 0.8;
+}
+
+.footer-copyright {
+  display: flex;
+  justify-content: center;
+  font-size: 0.9rem;
+  padding: 1.5rem;
+  font-weight: 100;
+}
+
+@media screen and (max-width: 768px) {
+  .footer-content {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+}
+
+@media screen and (max-width: 426px) {
+  .footer-content {
+    grid-template-columns: repeat(1, 1fr);
+    padding: 3rem 2rem;
+  }
 }
