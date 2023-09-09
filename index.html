@@ -7,7 +7,7 @@
     <title>Aloha Poke</title>
 
     <!--LINK FAVICON-->
-    <link rel="shortcut icon" href="./img/favicon.svg" type="image/x-icon">
+    <link rel="shortcut icon" href="./img/poke-icon.png" type="image/x-icon">
 
     <!--LINK ANIMATE-->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
@@ -49,11 +49,11 @@
             </ul>
 
             <ul id="menu-principal">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Sobre</a></li>
-                <li><a href="#">Cardápio</a></li>
-                <li><a href="#">Delivery</a></li>
-                <li><a href="#">Contato</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#cardapio">Cardápio</a></li>
+                <li><a href="#delivery">Delivery</a></li>
+                <li><a href="#contacto">Contacto</a></li>
             </ul>
         </nav>
         <!--END NAV-->
@@ -68,8 +68,9 @@
 
     <!--MAIN-->
     <main>
-        <!--SOBRE -->
-        <section class="sobre">
+        <!--SOBRE-->
+        <section class="sobre" id="sobre">
+
             <h2>Sobre</h2>
             <div class="sobre-container">
                 <!--SOBRE 1-->
@@ -153,10 +154,10 @@
             </div>
 
         </section>
-        <!-- END SOBRE-->
+        <!--END SOBRE-->
 
         <!--CARDÁPIO-->
-        <section class="cardapio">
+        <section class="cardapio" id="cardapio">
             <h2>Cardápio</h2>
             <div class="cardapio-container">
                 <div class="row">
@@ -220,11 +221,11 @@
                     </div><!-- /.col-lg-4 -->
 
                     <div class="col-lg-4">
-                        <img src="./img/poke-camarao.png" class="bd-placeholder-img rounded-circle" width="140"
+                        <img src="./img/poke-atum.png" class="bd-placeholder-img rounded-circle" width="140"
                             height="140" role="img" aria-label="Placeholder: 140x140"
                             preserveAspectRatio="xMidYMid slice" focusable="false"></img>
 
-                        <h3 class="fw-normal cardapio-titulo"><strong>Poké Camarão</strong></h3>
+                        <h3 class="fw-normal cardapio-titulo"><strong>Poké Atum</strong></h3>
 
                         <p class="cardapio-texto">*Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere
                             aspernatur vitae, fuga
@@ -240,11 +241,11 @@
                     </div><!-- /.col-lg-4 -->
 
                     <div class="col-lg-4">
-                        <img src="./img/poke-salmao.png" class="bd-placeholder-img rounded-circle" width="140"
+                        <img src="./img/poke-frango.png" class="bd-placeholder-img rounded-circle" width="140"
                             height="140" role="img" aria-label="Placeholder: 140x140"
                             preserveAspectRatio="xMidYMid slice" focusable="false"></img>
 
-                        <h3 class="fw-normal cardapio-titulo"><strong>Poké Salmão</strong></h3>
+                        <h3 class="fw-normal cardapio-titulo"><strong>Poké Frango</strong></h3>
 
                         <p class="cardapio-texto">*Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere
                             aspernatur vitae, fuga
@@ -259,11 +260,11 @@
                     </div><!-- /.col-lg-4 -->
 
                     <div class="col-lg-4">
-                        <img src="./img/poke-salmao.png" class="bd-placeholder-img rounded-circle" width="140"
+                        <img src="./img/poke-frutas.png" class="bd-placeholder-img rounded-circle" width="140"
                             height="140" role="img" aria-label="Placeholder: 140x140"
                             preserveAspectRatio="xMidYMid slice" focusable="false"></img>
 
-                        <h3 class="fw-normal cardapio-titulo"><strong>Poké Vegan</strong></h3>
+                        <h3 class="fw-normal cardapio-titulo"><strong>Poké Frutas</strong></h3>
 
                         <p class="cardapio-texto">*Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere
                             aspernatur vitae, fuga
@@ -282,11 +283,10 @@
         <!-- END CARDÁPIO-->
 
         <!--DELIVERY-->
-        <section id="delivery">
+        <section id="delivery" id="delivery">
             <div class="delivery-container">
                 <div class="chamada">
                     <h1>Peça delivery</h1>
-                    <h2>Faça o seu pedido e levamos até você!</h2>
                     <a href="#" target="_blank">CLIQUE AQUI</a>
                 </div>
             </div>
@@ -294,7 +294,7 @@
         <!--END DELIVERY-->
 
         <!--CONTACTO-->
-        <section id="contacto">
+        <section class="contacto" id="contacto">
             <div class="form-contacto">
                 <h2>Contacto</h2>
                 <form action="" method="">
@@ -314,14 +314,14 @@
     </main>
     <!--END MAIN-->
 
-    <!--FOOTER-
+    <!--FOOTER-->
     <footer>
         <div class="footer-content">
             <div class="footer-contacts">
                 <img src="./img/logo.png" alt="Logo Aloha Poke">
                 <p>Morada: Porto</br>
-                (+351 9999 - 8888)</br>
-                hello@alohapokes.pt</p>
+                    (+351 9999 - 8888)</br>
+                    hello@alohapokes.pt</p>
 
 
                 <div class="footer-social-midia">
@@ -329,11 +329,11 @@
                         <i class="fa-brands fa-instagram"></i>
                     </a>
 
-                    <a href="#" class="footer-link"  id="facebook">
+                    <a href="#" class="footer-link" id="facebook">
                         <i class="fa-brands fa-facebook"></i>
                     </a>
 
-                    <a href="#" class="footer-link"  id="whatsapp">
+                    <a href="#" class="footer-link" id="whatsapp">
                         <i class="fa-brands fa-whatsapp"></i>
                     </a>
                 </div>
@@ -372,25 +372,19 @@
                 </li>
             </ul>
 
-            <div class="footer-inscreva">
-                <h3>Inscreva-se</h3>
-                <p>
-                    Deixe o seu email para receber as nossas novidades.
-                </p>
 
-                <div class="input-group">
-                    <input type="email" class="email">
-                    <button>
-                        <i class="fa-regular fa-envelope"></i>
-                    </button>
-                </div>
+            <div class="link-topo">
+                <a href="./index.html" id="link-topo">
+                    <i class="fa-solid fa-circle-up"></i></i>
+                </a>
             </div>
         </div>
+
         <div class="footer-copyright">
             &copy; 2023 Fabrício Lopes | Todos os direitos reservados.
         </div>
-    </footer> 
-     END FOOTER-->
+    </footer>
+    <!-- END FOOTER-->
 
     <!--LINKS JQUERY-->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -412,7 +406,7 @@
     <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
 
     <!--LINK JS-->
-    <script src="./js/script.js"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>

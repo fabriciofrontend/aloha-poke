@@ -1,4 +1,5 @@
-/* COLOR
+/********** COLORS **********/
+
 #558C03
 #A1BF73
 #83A638
@@ -10,16 +11,17 @@
 #F2CB05
 #F2B705
 #F24B4B
-*/
 
-/* FONTS
+
+/********** FONTS **********/
+/*
 font-family: 'Assistant', sans-serif;
 font-family: 'Poppins', sans-serif;
 font-family: 'Roboto', sans-serif;
 font-family: 'Rubik', sans-serif;
 */
 
-/*GLOBAL ADJUSTMENTS*/
+/********** GLOBAL ADJUSTMENTS **********/
 * {
   padding: 0;
   margin: 0;
@@ -40,7 +42,7 @@ h2 {
   font-size: max(20px, 2.8vw);
 }
 
-/*-----------BOTÃO CHAMADA-------------*/
+/********** BOTÃO CHAMADA **********/
 div.chamada a {
   background: linear-gradient(to bottom, rgba(151, 191, 4), rgba(242, 75, 75));
   color: #000;
@@ -70,7 +72,7 @@ div.chamada a:hover {
   cursor: pointer;
 }
 
-/*--------HEADER-------*/
+/********** HEADER **********/
 header {
   background: url(../img/headerCapaG.png);
   max-width: 100%;
@@ -79,18 +81,18 @@ header {
   background-position: center center;
   background-size: cover;
   padding: 20px;
-
   position: relative;
 }
 
-/*--------NAVBAR-------*/
+/********** NAVBAR **********/
 header nav#nav-esq {
   width: 100%;
   height: 150px;
-
+  background: transparent;
   display: flex;
   flex-flow: row;
   justify-content: space-between;
+  position: fixed;
 }
 
 header nav#nav-esq div#logo {
@@ -104,7 +106,7 @@ header nav#nav-esq div#logo img {
   max-height: 100%;
 }
 
-/*--------MENU HAMBURGUER-------*/
+/********** MENU HAMBURGUER **********/
 header nav#nav-esq ul#icone-menu {
   display: none;
 }
@@ -119,10 +121,9 @@ header nav#nav-esq ul#icone-menu li ion-icon {
   margin-right: 2rem;
 }
 
-/*--------MENU PRINCIPAL-------*/
+/********** MENU PRINCIPAL **********/
 header nav#nav-esq ul#menu-principal {
   margin-left: 5rem;
-
   display: flex;
   flex-flow: row wrap;
 }
@@ -134,12 +135,12 @@ header nav#nav-esq ul#menu-principal li {
 
 header nav#nav-esq ul#menu-principal li a {
   text-decoration: none;
-  color: #f2f2f2;
-  font-size: 110%;
-  text-shadow: 4px, 6px, 10px, #000;
+  color: #f24b4b;
+  text-shadow: 4px 4px 6px #000;
+  font-size: 120%;
   padding-bottom: 10px;
   transition: 0.3s ease-out;
-  font-weight: 600;
+  font-weight: 700;
 }
 
 header nav#nav-esq ul#menu-principal li a:hover {
@@ -147,7 +148,7 @@ header nav#nav-esq ul#menu-principal li a:hover {
   opacity: 0.6;
 }
 
-/*--------CHAMADA-------*/
+/********** CHAMADA **********/
 header div.chamada {
   position: absolute;
   width: 100%;
@@ -172,10 +173,8 @@ header div.chamada h1 {
 header div.chamada h2 {
   color: #d0f2f2;
   font-family: "Roboto", cursive;
-  /* text-shadow: 4px 4px 6px #000; */
   font-weight: 700;
   font-size: max(20px, 2.8vw);
-
   margin: 10px 50px;
 
   /* animation-name: HeaderH1-moverParaEsquerda;
@@ -184,13 +183,11 @@ header div.chamada h2 {
   animation-timing-function: ease-out;
   animation-fill-mode: backwards; */
 }
-/*______________________________________*/
-/*                 SOBRE                */
-/*______________________________________*/
 
+/********** SOBRE **********/
 section.sobre {
   max-width: 100%;
-  padding-top: 40px;
+  padding-top: 100px;
   padding-bottom: 30px;
   margin-bottom: 10px;
   text-align: center;
@@ -210,7 +207,6 @@ section.sobre div.sobre-container {
   flex-flow: row wrap;
   justify-content: center;
   margin-bottom: 5px;
-
   text-align: center;
   margin-top: 10px;
 }
@@ -220,7 +216,7 @@ section.sobre div.sobre-container h3 {
   text-align: center;
   font-size: max(30px, 1.8vw);
   margin-top: auto;
-  color: #f24b4b;
+  color: #055902;
   text-shadow: 2px 2px 4px #000;
 }
 
@@ -237,17 +233,15 @@ section.sobre div.sobre-container img {
   border-radius: 20px;
 }
 
-/*______________________________________*/
-/*               CARDAPIO               */
-/*______________________________________*/
-
+/********** CARDÁPIO **********/
 section.cardapio {
   width: 100%;
-  padding-top: 10px;
+  padding-top: 100px;
   padding-bottom: 40px;
   margin-bottom: 20px;
   text-align: center;
 }
+
 section.cardapio h2 {
   margin-left: 2rem;
   text-align: left;
@@ -286,22 +280,17 @@ section.cardapio div.cardapio-container .cardapio-comprar:hover {
   cursor: pointer;
 }
 
-/*______________________________________*/
-/*             DELIVERY                 */
-/*______________________________________*/
-
+/********** DELIVERY **********/
 section#delivery {
   background: url(../img/sectionDelivery.jpg);
-  width: 100%;
+  max-width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   border-top: 5px solid #000;
   border-bottom: 5px solid #000;
-  padding-top: 10px;
-  padding-bottom: 40px;
-  margin-bottom: 60px;
+  padding: 25%;
 }
 
 section#delivery div.delivery-container {
@@ -313,79 +302,84 @@ section#delivery div.delivery-container {
   text-align: center;
   color: #d0f2f2;
   margin-top: 25px;
-  font-size: max(16px, 1vw);
+  margin-bottom: 30px;
 }
 
-/*______________________________________*/
-/*               CONTACTO               */
-/*______________________________________*/
+section#delivery div.delivery-container h1 {
+  font-size: 60px;
+  padding-top: 50px;
+  padding-bottom: 20px;
+}
 
-section#contacto {
+/********** CONTACTO **********/
+section.contacto {
   display: flex;
   align-items: center;
   justify-content: center;
   min-height: 100vh;
   font-family: "Poppins", sans-serif;
+  margin-top: 50px;
+  padding-top: 120px;
 }
 
-section#contacto div.form-contacto {
+section.contacto div.form-contacto {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  padding: 10px 35px;
-  width: 400px;
-  background: #558C03;
+  padding: 5px 10px;
+  width: 350px;
+  background: #558c03;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
   border-radius: 20px;
 }
 
-section#contacto div.form-contacto h2 {
+section.contacto div.form-contacto h2 {
   color: #000;
-  font-size: 2.5rem;
+  font-size: 2rem;
   margin: 2rem;
 }
 
-section#contacto div.form-contacto form {
+section.contacto div.form-contacto form {
   display: flex;
   flex-direction: column;
   width: 100%;
 }
 
-section#contacto div.form-contacto form label {
+section.contacto div.form-contacto form label {
   color: #000;
   font-size: 20px;
   margin-bottom: 4px;
 }
 
-section#contacto div.form-contacto form input {
+section.contacto div.form-contacto form input {
   padding: 10px;
   outline: none;
   border: 0;
   margin: 20px;
-  font-size: 15px;
+  font-size: 10px;
   transition: all 0.5s;
 }
 
-section#contacto div.form-contacto form input:focus {
+section.contacto div.form-contacto form input:focus {
   border-radius: 16px;
 }
 
-section#contacto div.form-contacto form textarea {
+section.contacto div.form-contacto form textarea {
   padding: 10px;
   outline: none;
   border: 0;
-  font-size: 15px;
+  font-size: 10px;
   margin-bottom: 30px;
   transition: all 0.5s;
 }
 
-section#contacto div.form-contacto form textarea:focus {
+section.contacto div.form-contacto form textarea:focus {
   border-radius: 16px;
 }
 
-section#contacto div.form-contacto form button {
-  padding: 15px;
+section.contacto div.form-contacto form button {
+  padding: 10px;
   cursor: pointer;
   font-size: 16px;
   background: transparent;
@@ -395,44 +389,43 @@ section#contacto div.form-contacto form button {
   margin-bottom: 20px;
 }
 
-section#contacto div.form-contacto form button:hover {
+section.contacto div.form-contacto form button:hover {
   background: #f2f2f2;
-  color: #558C03;
+  color: #558c03;
   border-radius: 16px;
 }
 
-/*______________________________________*/
-/*                 FOOTER               */
-/*______________________________________*/
-
+/********** FOOTER **********/
 footer {
-  /* font-family: "Roboto" sans-serif;
-  letter-spacing: 1px; */
   width: 100%;
-  background-color: #d0f2f2;
-}
-
-.footer-link {
-  text-decoration: none;
+  background: #d0f2f2;
 }
 
 footer div.footer-content {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  padding: 3rem 3.5rem;
+  column-gap: 10px;
+  grid-template-columns: auto auto auto;
+  padding: 1rem;
+  margin-top: 50px;
+}
+
+footer div.footer-content {
+  padding: 30px;
+  font-size: 20px;
+  text-align: center;
 }
 
 footer div.footer-content div.footer-contacts img {
-  margin-bottom: 0.75rem;
   width: 100px;
 }
 
 footer div.footer-content div.footer-contacts p {
-  font-size: max(12px, 1vw);
+  font-size: max(16px, 1vw);
 }
 
 footer div.footer-content div.footer-contacts div.footer-social-midia {
   display: flex;
+  justify-content: center;
   gap: 10px;
 }
 
@@ -441,23 +434,16 @@ footer
   div.footer-contacts
   div.footer-social-midia
   .footer-link {
+  text-decoration: none;
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 2.5rem;
-  width: 2.5rem;
+  height: 2rem;
+  width: 2rem;
   color: #f2f2f2;
   border-radius: 50%;
+  font-size: 1rem;
   transition: all 0.4s;
-}
-
-footer
-  div.footer-content
-  div.footer-contacts
-  div.footer-social-midia
-  .footer-link
-  i {
-  font-size: 1.25rem;
 }
 
 footer
@@ -482,70 +468,38 @@ footer
 
 footer div.footer-content ul.footer-list {
   display: flex;
+  justify-content: center;
   flex-direction: column;
-  gap: 0.75rem;
   list-style: none;
-}
-
-footer div.footer-content .footer-list .footer-link {
-  color: #000000;
-  transition: all 0.4s;
-}
-
-footer div.footer-content .footer-list .footer-link {
-  font-size: max(20px, 1vw);
+  font-size: max(10px, 1vw);
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-footer div.footer-content .footer-list .footer-link:hover {
-  color: #055902;
-}
-
-.footer-inscreva {
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
-}
-
-.footer-inscreva p {
+footer div.footer-content ul.footer-list a.footer-link {
   color: #000000;
-}
-
-.input-group {
-  display: flex;
-  align-items: center;
-  background-color: #055902;
-  border-radius: 4px;
-}
-
-.input-group input {
-  all: unset;
-  padding: 0.75rem;
-  width: 100%;
-}
-
-.input-group button {
-  background-color: #000000;
-  border: none;
-  color: #f2f2f2;
-  padding: 0px 1.25rem;
-  font-size: 1.125rem;
-  height: 100%;
-  border-radius: 0px 4px 4px 0px;
-  cursor: pointer;
   transition: all 0.4s;
+  text-decoration: none;
 }
 
-.input-group button:hover {
-  opacity: 0.8;
+footer div.footer-content .footer-list a.footer-link:hover {
+  color: #f24b4b;
 }
 
-.footer-copyright {
+footer div.link-topo #link-topo {
+  text-decoration: none;
+  color: #000000;
+  padding: 50px;
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+}
+
+footer div.footer-copyright {
   display: flex;
   justify-content: center;
-  font-size: 0.9rem;
-  padding: 1.5rem;
-  font-weight: 100;
+  font-size: 1rem;
+  padding: 1rem;
+  color: #000000;
 }

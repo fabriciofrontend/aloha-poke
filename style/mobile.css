@@ -19,7 +19,7 @@
     flex-direction: column;
     width: 80%;
     height: 85vh;
-    background: linear-gradient(#d0f2f2 5%, #055902 30%, #f2cb05 90%);
+    background: #d0f2f2;
     padding-top: 0.5rem;
 
     position: absolute;
