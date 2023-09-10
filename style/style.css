@@ -301,8 +301,6 @@ section#delivery div.delivery-container {
   margin-bottom: 20px;
   text-align: center;
   color: #d0f2f2;
-  margin-top: 25px;
-  margin-bottom: 30px;
 }
 
 section#delivery div.delivery-container h1 {
@@ -319,7 +317,7 @@ section.contacto {
   min-height: 100vh;
   font-family: "Poppins", sans-serif;
   margin-top: 50px;
-  padding-top: 120px;
+  padding-top: 50px;
 }
 
 section.contacto div.form-contacto {
@@ -328,7 +326,7 @@ section.contacto div.form-contacto {
   justify-content: center;
   flex-direction: column;
   padding: 5px 10px;
-  width: 350px;
+  width: 300px;
   background: #558c03;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
   border-radius: 20px;
