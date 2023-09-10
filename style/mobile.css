@@ -1,3 +1,23 @@
+/*responsividade da capa no header*/
+@media screen and (max-width: 1200px) {
+  header {
+    background: url(../img/headerCapaM.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  header {
+    background: url(../img/headerCapaP.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+  }
+}
+
+
 /*-------------ELEMENTOS DO HEADER—----------*/
 @media screen and (max-width: 630px) {
   /*-------MENU HAMBURGUER-------*/
@@ -32,7 +52,6 @@
 
   header nav#nav-esq ul#menu-principal li {
     margin: 0.5rem;
- 
   }
 
   header nav#nav-esq ul#menu-principal li a {
@@ -40,26 +59,38 @@
   }
 }
 
-/*responsividade da capa no header*/
-@media screen and (max-width: 1200px) {
-  header {
-    background: url(../img/headerCapaM.jpg);
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  header {
-    background: url(../img/headerCapaP.png);
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-  }
-}
 
 /*-------------NAVBAR—-----------*/
+
+@media screen and (max-width: 1104px) {
+  header nav#nav-esq {
+    display: flex;
+    justify-content: center;
+    margin: 50px;
+    font-size: 90%;
+  }
+}
+
+@media screen and (max-width: 894px) {
+  header nav#nav-esq {
+    display: flex;
+    justify-content: space-around;
+     margin-top: 10px;
+     margin-left: 1rem;
+    padding: 30px;
+    font-size: 80%;
+  }
+}
+
+/* @media screen and (max-width: 470) {
+  header nav#nav-esq  div#logo  img { 
+  justify-content: flex-start;
+  esconder logo
+
+  
+} */
+
+
 /*diminuir o tamanho da letra*/
 @media screen and (max-width: 110px) {
   header nav#nav-esq ul#menu-principal li a {
@@ -69,19 +100,30 @@
 
 /*diminuir o tamanho da logo*/
 
-
-
 /*-------------DELIVERY-----------*/
-
-
+/* @media screen and (max-width: 570) {
+  section#delivery {
+    background: 20px;
+   padding: 100px;
+  
+  }
+  
+} */
 
 
 /*-------------FOOTER—-----------*/
 
-@media screen and (max-width: 768px) {
-  .footer-content {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 2rem;
+@media screen and (max-width: 1104px) {
+  footer div.footer-content {
+    grid-template-columns: auto auto auto;
+    /* grid-template-columns: repeat(2, 1fr); */
+    /* gap: 1rem; */
+    margin-left: 50px;
+    font-size: 5px;
+  }
+
+  section.contacto div.form-contacto {
+    width: 550px;
   }
 }
 
@@ -91,5 +133,3 @@
     padding: 3rem 2rem;
   }
 }
-
-
