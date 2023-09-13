@@ -28,7 +28,7 @@ font-family: 'Rubik', sans-serif;
   box-sizing: border-box;
 }
 
-h1 {
+/* h1 {
   font-family: "Poppins" cursive;
   text-shadow: 4px 4px 6px #000;
   font-weight: 700;
@@ -40,7 +40,7 @@ h2 {
   text-shadow: 4px 4px 6px #464646;
   font-weight: 700;
   font-size: max(20px, 2.8vw);
-}
+} */
 
 /********** BOTÃO CHAMADA **********/
 div.chamada a {
@@ -72,68 +72,61 @@ div.chamada a:hover {
   cursor: pointer;
 }
 
-/********** HEADER **********/
-header {
-  background: url(../img/headerCapaG.png);
-  max-width: 100%;
-  height: 90vh;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  padding: 20px;
-  position: relative;
-}
-
 /********** NAVBAR **********/
-header nav#nav-esq {
+nav#nav-esq {
+  top: 0;
+  left: 0;
   width: 100%;
-  height: 150px;
-  background: transparent;
+  height: 100px;
+  padding: 20px 30px;
+  background: #000;
   display: flex;
   flex-flow: row;
   justify-content: space-between;
+  align-items: center;
   position: fixed;
 }
 
-header nav#nav-esq div#logo {
-  max-width: 100px;
-  max-height: 120px;
+
+nav#nav-esq div#logo {
+  max-width: 80px;
+  max-height: 100px;
   margin-left: 4rem;
 }
 
-header nav#nav-esq div#logo img {
+nav#nav-esq div#logo img {
   max-width: 100%;
-  max-height: 100%;
+  max-height: 80%;
 }
 
 /********** MENU HAMBURGUER **********/
-header nav#nav-esq ul#icone-menu {
+nav#nav-esq ul#icone-menu {
   display: none;
 }
 
-header nav#nav-esq ul#icone-menu li {
+nav#nav-esq ul#icone-menu li {
   list-style: none;
 }
 
-header nav#nav-esq ul#icone-menu li ion-icon {
+nav#nav-esq ul#icone-menu li ion-icon {
   font-size: 50px;
   color: #000;
   margin-right: 2rem;
 }
 
 /********** MENU PRINCIPAL **********/
-header nav#nav-esq ul#menu-principal {
+nav#nav-esq ul#menu-principal {
   margin-left: 5rem;
   display: flex;
   flex-flow: row wrap;
 }
 
-header nav#nav-esq ul#menu-principal li {
+nav#nav-esq ul#menu-principal li {
   list-style: none;
   margin-right: 2rem;
 }
 
-header nav#nav-esq ul#menu-principal li a {
+nav#nav-esq ul#menu-principal li a {
   text-decoration: none;
   color: #f24b4b;
   text-shadow: 4px 4px 6px #000;
@@ -143,13 +136,26 @@ header nav#nav-esq ul#menu-principal li a {
   font-weight: 700;
 }
 
-header nav#nav-esq ul#menu-principal li a:hover {
+nav#nav-esq ul#menu-principal li a:hover {
   border-bottom: 1px solid #000;
   opacity: 0.6;
 }
 
+/********** HEADER **********/
+header {
+  background: url(../img/headerCapaG.png);
+  max-width: 100%;
+  height: 90vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 20px;
+  margin-top: 100px;
+  position: relative;
+}
+
 /********** CHAMADA **********/
-header div.chamada {
+div.chamada {
   position: absolute;
   width: 100%;
   height: 300px;
@@ -159,7 +165,7 @@ header div.chamada {
   transform: translate(-50%, -50%); /*bem centralizado*/
 }
 
-header div.chamada h1 {
+div.chamada h1 {
   color: #97bf04;
   font-family: "Assistant", cursive;
   font-weight: 800;
@@ -170,7 +176,7 @@ header div.chamada h1 {
   animation-timing-function: ease-out; */
 }
 
-header div.chamada h2 {
+div.chamada h2 {
   color: #d0f2f2;
   font-family: "Roboto", cursive;
   font-weight: 700;
@@ -283,14 +289,20 @@ section.cardapio div.cardapio-container .cardapio-comprar:hover {
 /********** DELIVERY **********/
 section#delivery {
   background: url(../img/sectionDelivery.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
   max-width: 100%;
+  height: 80vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   border-top: 5px solid #000;
   border-bottom: 5px solid #000;
-  padding: 25px;
+  padding: 20px;
+  margin-top: 80px;
+  position: relative;
 }
 
 section#delivery div.delivery-container {
@@ -304,7 +316,7 @@ section#delivery div.delivery-container {
 }
 
 section#delivery div.delivery-container h1 {
-  font-size: 60px;
+  font-size: 50px;
   padding-top: 40px;
   padding-bottom: 20px;
 }
