@@ -1,3 +1,7 @@
+/*_____________________________*/
+/*           HEADER            */
+/*_____________________________*/
+
 /*responsividade da capa no header*/
 @media screen and (max-width: 1200px) {
   header {
@@ -6,118 +10,154 @@
     background-position: center center;
     background-size: cover;
   }
+
+  @media screen and (max-width: 600px) {
+    header {
+      background: url(../img/headerCapaP.png);
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: cover;
+    }
+  }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
   header {
-    background: url(../img/headerCapaP.png);
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
+    height: auto;
+    min-height: 60vh;
   }
 }
 
-
-/*-------------ELEMENTOS DO HEADER—----------*/
-@media screen and (max-width: 630px) {
-  /*-------MENU HAMBURGUER-------*/
-  header nav#nav-esq {
-    justify-content: space-between;
-  }
-
-  /*PARA ANIMACAO JS*/
-  header nav#nav-esq ul#icone-menu {
-    display: flex;
-  }
-
-  header nav#nav-esq ul#icone-menu li#menuX {
-    display: none;
-  }
-
-  /*--------MENU—--------*/
-  header nav#nav-esq ul#menu-principal {
-    flex-direction: column;
-    width: 80%;
-    height: 85vh;
-    background: #d0f2f2;
-    padding-top: 0.5rem;
-
-    position: absolute;
-    top: 9.3rem;
-    right: 0;
-    z-index: 999;
-
-    display: none;
-  }
-
-  header nav#nav-esq ul#menu-principal li {
-    margin: 0.5rem;
-  }
-
-  header nav#nav-esq ul#menu-principal li a {
-    font-size: 120%;
-  }
-}
-
-
-/*-------------NAVBAR—-----------*/
-
-@media screen and (max-width: 1104px) {
-  header nav#nav-esq {
-    display: flex;
-    justify-content: center;
-    margin: 50px;
-    font-size: 90%;
-  }
-}
-
-@media screen and (max-width: 894px) {
-  header nav#nav-esq {
-    display: flex;
-    justify-content: space-around;
-     margin-top: 10px;
-     margin-left: 1rem;
-    padding: 30px;
-    font-size: 80%;
-  }
-}
-
-/* @media screen and (max-width: 470) {
-  header nav#nav-esq  div#logo  img { 
-  justify-content: flex-start;
-  esconder logo
-
-  
-} */
-
-
+/*_____________________________*/
+/*           NAVBAR            */
+/*_____________________________*/
 /*diminuir o tamanho da letra*/
-@media screen and (max-width: 110px) {
+@media screen and (max-width: 1110px) {
   header nav#nav-esq ul#menu-principal li a {
     font-size: 90%;
   }
 }
 
 /*diminuir o tamanho da logo*/
-
-/*-------------DELIVERY-----------*/
-/* @media screen and (max-width: 570) {
-  section#delivery {
-    background: 20px;
-   padding: 100px;
-  
+@media screen and (max-width: 970px) {
+  header nav#nav-esq div#logo {
+    margin-left: 1rem;
   }
-  
-} */
+  /*-------MENU HAMBURGUER-------*/
+  header nav#nav-esq {
+    justify-content: space-between;
+    /* padding: 1.5rem; */
+  }
 
+  header nav#nav-esq ul#icone-menu {
+    display: flex;
+  }
 
-/*-------------FOOTER—-----------*/
+  /*------PARA ANIMAÇÃO NO JS------*/
+  header nav#nav-esq ul#icone-menu li#menuX {
+    display: none;
+  }
 
-@media screen and (max-width: 1104px) {
+  /*--------MENU PRINCIPAL—--------*/
+  header nav#nav-esq ul.menu-principal {
+    flex-direction: column;
+    width: 80%;
+    height: 70vh;
+    flex-direction: column;
+    background: #000;
+    padding-top: 0.5rem;
+
+    position: absolute;
+    top: 7rem;
+    right: 0;
+    z-index: 999;
+
+    display: none;
+  }
+
+  header nav#nav-esq ul.menu-principal li {
+    margin: 0.5rem;
+    /* margin-left: 1rem; */
+  }
+
+  header nav#nav-esq ul.menu-principal li a {
+    font-size: 120%;
+  }
+}
+
+@media (max-width: 768px) {
+  header nav#nav-esq ul.menu-principal {
+    display: none;
+  }
+
+  header nav#nav-esq ul#icone-menu {
+    display: block;
+  }
+}
+
+@media (max-width: 768px) {
+  header nav#nav-esq ul#icone-menu li ion-icon {
+    font-size: 30px;
+  }
+}
+
+/*_____________________________*/
+/*           NAVBAR            */
+/*_____________________________*/
+@media (max-width: 768px) {
+  section.sobre h2 {
+    margin-left: 0;
+    text-align: center;
+  }
+}
+
+/*_____________________________*/
+/*          DELIVERY           */
+/*_____________________________*/
+@media (max-width: 768px) {
+  section#delivery {
+    height: auto; /* Altura automática para acomodar o conteúdo */
+    padding: 20px; /* Espaçamento menor */
+    margin-top: 40px; /* Margem superior menor */
+  }
+
+  section#delivery div.delivery-container {
+    width: 100%; /* Largura total */
+  }
+
+  section#delivery div.delivery-container h1 {
+    font-size: 36px; /* Reduzir o tamanho da fonte */
+    padding-top: 10px; /* Espaçamento superior menor */
+    padding-bottom: 5px; /* Espaçamento inferior menor */
+  }
+}
+
+@media (max-width: 768px) {
+  div.chamada a {
+    font-size: 14px; /* Reduza o tamanho da fonte para telas menores */
+    padding: 15px 50px; /* Reduza o espaçamento interno para telas menores */
+    width: 100%; /* Faça o botão ocupar a largura total */
+  }
+}
+
+/*_____________________________*/
+/*           CONTACTO          */
+/*_____________________________*/
+@media (max-width: 768px) {
+  section.contacto {
+    flex-direction: column; /* Alinhar conteúdo verticalmente em telas menores */
+    padding: 20px; /* Espaçamento menor */
+  }
+}
+
+/*_____________________________*/
+/*            FOOTER           */
+/*_____________________________*/
+
+/* @media screen and (max-width: 1104px) {
   footer div.footer-content {
     grid-template-columns: auto auto auto;
-    /* grid-template-columns: repeat(2, 1fr); */
-    /* gap: 1rem; */
+
     margin-left: 50px;
     font-size: 5px;
   }
@@ -131,5 +171,13 @@
   .footer-content {
     grid-template-columns: repeat(1, 1fr);
     padding: 3rem 2rem;
+  }
+} */
+
+@media (max-width: 768px) {
+  footer div.footer-content {
+    display: flex;
+    flex-direction: column; /* Coluna em telas menores */
+    align-items: center;
   }
 }
