@@ -46,7 +46,7 @@ div.chamada a {
   font-size: max(16px, 1.8vw);
   color: #000;
   text-decoration: none;
-  padding: 20px 100px;
+  padding: 15px 100px;
   border-radius: 50px;
   font-weight: 600;
   background: linear-gradient(to bottom, rgba(151, 191, 4), rgba(242, 75, 75));
@@ -78,6 +78,8 @@ div.chamada a:hover {
 header {
   max-width: 100%;
   height: 90vh;
+  /* width: 100%;
+  height: 95vh; */
   background: url(../img/headerCapaG.png);
   background-repeat: no-repeat;
   background-position: center center;
@@ -97,19 +99,21 @@ header nav#nav-esq {
 
   display: flex;
   flex-flow: row;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   position: fixed;
 }
 
 header nav#nav-esq div#logo {
-  max-width: 100px;
-  max-height: 120px;
+  /* max-width: 100px;
+  max-height: 100px; */
+  width: 100px;
+  height: 80px;
   margin-left: 5rem;
 }
 
 header nav#nav-esq div#logo img {
-  max-width: 80%;
+  max-width: 100%;
   max-height: 100%;
 }
 
@@ -122,17 +126,16 @@ header nav#nav-esq ul#icone-menu {
   top: 0;
   right: 0;
   width: 100%;
-  text-align: center;
-  z-index: 9999;
+  text-align: right;
+  z-index: 999;
 }
 
 header nav#nav-esq ul#icone-menu li {
   list-style: none;
-  margin: 10px;
+  /* margin: 10px; */
 }
 
 header nav#nav-esq ul#icone-menu li ion-icon {
-  /* font-size: 50px; */
   font-size: 30px;
   color: #f2f2f2;
   margin-right: 2rem;
@@ -155,10 +158,9 @@ header nav#nav-esq ul.menu-principal li a {
   text-decoration: none;
   color: #f2f2f2;
   text-shadow: 4px 6px 10px #000;
-  font-size: 110%;
+  font-size: 100%;
   padding-bottom: 10px;
   transition: 0.3s ease-in-out;
-  /* font-weight: 700; */
 }
 
 header nav#nav-esq ul.menu-principal li a:hover {
@@ -174,14 +176,11 @@ header div.chamada {
   text-align: center;
   top: 65%;
   left: 50%;
-  transform: translate(-50%, -50%); /*bem centralizado*/
+  transform: translate(-50%, -50%); 
 }
 
 header div.chamada h1 {
   color: #97bf04;
-  /* font-family: "Assistant", cursive;
-  font-weight: 800;
-  font-size: max(44px, 5.2vw); */
 
   /* animation-name: HeaderH1-moverParaDireita;
   animation-duration: 2s;
@@ -190,9 +189,6 @@ header div.chamada h1 {
 
 header div.chamada h2 {
   color: #d0f2f2;
-  /* font-family: "Roboto", cursive;
-  font-weight: 700;
-  font-size: max(20px, 2.8vw); */
   margin-bottom: 40px;
 
   /* animation-name: HeaderH1-moverParaEsquerda;
@@ -209,7 +205,7 @@ section.sobre {
   max-width: 100%;
   padding-top: 100px;
   padding-bottom: 30px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   text-align: center;
 }
 
@@ -321,7 +317,7 @@ section#delivery {
   border-top: 5px solid #000;
   border-bottom: 5px solid #000;
   padding: 50px;
-  margin-top: 80px;
+  margin-top: 30px;
   position: relative;
 }
 
@@ -330,16 +326,21 @@ section#delivery div.delivery-container {
   display: flex;
   flex-flow: column;
   justify-content: center;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 
   text-align: center;
 }
 
 section#delivery div.delivery-container h1 {
+  font-size: 70px;
+  color: #97bf04;
+}
+
+section#delivery div.delivery-container h2 {
   font-size: 50px;
-  padding-top: 20px;
   padding-bottom: 10px;
-  color: #055902;
+  color: #d0f2f2;
+  text-shadow: 4px 4px 6px #000;
 }
 
 /*_____________________________*/
@@ -351,32 +352,27 @@ section.contacto {
   justify-content: center;
   min-height: 100vh;
   font-family: "Poppins", sans-serif;
-  margin-top: 50px;
+  margin-top: 30px;
   padding-top: 50px;
 }
 
 section.contacto div.form-contacto {
-  width: 100%; /* Largura total */
-  max-width: 400px; /* Defina um máximo de largura para o formulário */
+  width: 100%;
+  max-width: 400px;
 
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   padding: 5px 10px;
-  width: 300px;
   background: #558c03;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
   border-radius: 20px;
 }
 
 section.contacto div.form-contacto h2 {
-  font-size: 24px; /* Reduza o tamanho da fonte para telas menores */
-  margin: 10px 0; /* Espaçamento menor nas margens superior e inferior */
-
-  /* color: #000;
-  font-size: 2rem;
-  margin: 2rem; */
+  font-size: 24px; 
+  margin: 10px 0; 
 }
 
 section.contacto div.form-contacto form {
@@ -386,17 +382,13 @@ section.contacto div.form-contacto form {
 }
 
 section.contacto div.form-contacto form label {
-  font-size: 16px; /* Reduza o tamanho da fonte para rótulos */
-
-  /* color: #000;
-  font-size: 20px;
-  margin-bottom: 4px; */
+  font-size: 16px; 
 }
 
 section.contacto div.form-contacto form input,
 section.contacto div.form-contacto form textarea {
   font-size: 16px;
-  padding: 10px; /* Espaçamento interno do input */
+  padding: 10px; 
   outline: none;
   border: 0;
   margin: 10px;
@@ -405,24 +397,11 @@ section.contacto div.form-contacto form textarea {
 
 section.contacto div.form-contacto form input:focus,
 section.contacto div.form-contacto form textarea:focus {
-  border-radius: 16px; /* Reduza o tamanho da fonte para inputs e textarea */
+  border-radius: 16px; 
 }
 
-/* section.contacto div.form-contacto form textarea {
-  padding: 10px;
-  outline: none;
-  border: 0;
-  font-size: 10px;
-  margin-bottom: 30px;
-  transition: all 0.5s;
-} */
-
-/* section.contacto div.form-contacto form textarea:focus {
-  border-radius: 16px;
-} */
-
 section.contacto div.form-contacto form button {
-  font-size: 18px; /* Aumente o tamanho da fonte do botão para telas menores */
+  font-size: 18px; 
 
   padding: 10px;
   cursor: pointer;
@@ -454,10 +433,6 @@ footer div.footer-content {
   grid-template-columns: auto auto auto;
   padding: 1rem;
   margin-top: 50px;
-}
-
-footer div.footer-content {
-  padding: 30px;
   font-size: 20px;
   text-align: center;
 }
@@ -536,7 +511,7 @@ footer div.footer-content .footer-list a.footer-link:hover {
 
 footer div.link-topo #link-topo {
   text-decoration: none;
-  color: #000000;
+  color: #f24b4b;
   padding: 50px;
   position: fixed;
   right: 10px;
