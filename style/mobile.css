@@ -2,6 +2,55 @@
 /*           HEADER            */
 /*_____________________________*/
 
+@media screen and (max-width: 1440px) {
+  header div.chamada  {
+    height: 400px;
+  }
+  header div.chamada h1 {
+    font-size: 120px;
+  }
+  header div.chamada h2 {
+    font-size: 40px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  /* header div.chamada  {
+    height: 400px;
+  } */
+  header div.chamada h1 {
+    font-size: 100px;
+  }
+  header div.chamada h2 {
+    font-size: 30px;
+  }
+}
+
+
+@media screen and (max-width: 555px) {
+  /* header div.chamada  {
+    height: 400px;
+  } */
+  header div.chamada h1 {
+    font-size: 80px;
+  }
+  header div.chamada h2 {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  /* header div.chamada  {
+    height: 400px;
+  } */
+  header div.chamada h1 {
+    font-size: 60px;
+  }
+  header div.chamada h2 {
+    font-size: 20px;
+  }
+}
+
 /*responsividade da capa no header*/
 @media screen and (max-width: 1200px) {
   header {
@@ -27,6 +76,7 @@
     }
   }
 }
+
 
 /*_____________________________*/
 /*           NAVBAR            */
@@ -128,6 +178,7 @@
   div.chamada {
     font-size: 70%;
     padding-top: 50px;
+    top: 50%
   }
 }
 
@@ -136,7 +187,8 @@
 /*_____________________________*/
 @media screen and (max-width: 1440px) {
   section.sobre {
-    margin-right: 1.5rem;
+    /* margin-right: 1.5rem; */
+     margin-right: 3rem;
   }
 }
 
@@ -158,8 +210,10 @@
 
 @media screen and (max-width: 1440px) {
   section.cardapio {
-    margin-right: 2rem;
+    /* margin-right: 2rem; */
+    margin: 1rem;
   }
+
   section.cardapio div.cardapio-container p.cardapio-texto {
     margin-right: 3rem;
     text-align: center;
@@ -175,10 +229,20 @@
 /*_____________________________*/
 /*          DELIVERY           */
 /*_____________________________*/
+@media screen and (max-width: 1440) {
+  section#delivery div.delivery-container h1 {
+    font-size: 150px;
+  }
+  section#delivery div.delivery-container h2 {
+    font-size: 100px;
+  }
+}
+
 @media screen and (max-width: 768px) {
   section#delivery {
     height: auto;
-    padding: 20px;
+    /* padding: 20px; */
+    padding: 30px;
     margin-top: 40px;
   }
 
