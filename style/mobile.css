@@ -2,8 +2,9 @@
 /*           HEADER            */
 /*_____________________________*/
 
+/*responsividade da chamada do header*/
 @media screen and (max-width: 1440px) {
-  header div.chamada  {
+  header div.chamada {
     height: 400px;
   }
   header div.chamada h1 {
@@ -25,7 +26,6 @@
     font-size: 30px;
   }
 }
-
 
 @media screen and (max-width: 555px) {
   /* header div.chamada  {
@@ -51,7 +51,7 @@
   }
 }
 
-/*responsividade da capa no header*/
+/*responsividade da capa do header*/
 @media screen and (max-width: 1200px) {
   header {
     background: url(../img/headerCapaM.jpg);
@@ -77,29 +77,25 @@
   }
 }
 
-
 /*_____________________________*/
 /*           NAVBAR            */
 /*_____________________________*/
-/*diminuir o tamanho da letra*/
+/*diminui o tamanho da letra*/
 @media screen and (max-width: 1110px) {
   header nav#nav-esq ul#menu-principal li a {
     font-size: 90%;
   }
 }
 
+@media screen and (max-width: 970px) {
+  header nav#nav-esq div#logo {
+    margin-left: 1rem;
+  }
+}
+
 /*****************************/
 
 @media screen and (max-width: 768px) {
-  header nav#nav-esq {
-    height: 80px;
-  }
-  header nav#nav-esq div#logo {
-    height: 60px;
-  }
-  header nav#nav-esq div#logo img {
-    max-width: 70%;
-  }
   header div.chamada h1 {
     padding-top: 50px;
   }
@@ -107,24 +103,23 @@
 
 /**********************************/
 
-/*diminuir o tamanho da logo*/
+/*diminui o tamanho da logo*/
 @media screen and (max-width: 630px) {
   header nav#nav-esq div#logo {
-    margin-left: 1rem;
+    margin-left: 0.5rem;
   }
   /*-------MENU HAMBURGUER-------*/
   header nav#nav-esq {
     justify-content: space-between;
-    /* align-items: flex-end;
-    padding: 1.5rem; */
+
+    padding: 1rem;
   }
 
   header nav#nav-esq ul#icone-menu {
     display: flex;
   }
 
-  /*
-    /* header nav#nav-esq ul#icone-menu {
+  /* header nav#nav-esq ul#icone-menu {
     display: block;
   } */
 
@@ -136,24 +131,23 @@
   /*--------MENU PRINCIPAL—--------*/
   header nav#nav-esq ul.menu-principal {
     flex-direction: column;
-    width: 80%;
-    /* height: 85vh; */
-    height: 70vh;
-    flex-direction: column;
-    background: transparent;
+    width: 60%;
+    height: 40vh;
+    background-color: #000;
+
     padding-top: 0.5rem;
     position: absolute;
-    /* top: 9.3rem; */
-    top: 7rem;
+
+    top: 5.5rem;
     right: 0;
     z-index: 999;
+
     display: none;
-    transition: all .4s;
+    /* transition: all 0.5s; */
   }
 
   header nav#nav-esq ul.menu-principal li {
     margin: 0.5rem;
-    /* margin-left: 1rem; */
   }
 
   header nav#nav-esq ul.menu-principal li a {
@@ -178,7 +172,7 @@
   div.chamada {
     font-size: 70%;
     padding-top: 50px;
-    top: 50%
+    top: 50%;
   }
 }
 
@@ -188,7 +182,7 @@
 @media screen and (max-width: 1440px) {
   section.sobre {
     /* margin-right: 1.5rem; */
-     margin-right: 3rem;
+    margin-right: 3rem;
   }
 }
 
@@ -200,7 +194,7 @@
 
 @media screen and (max-width: 768px) {
   section.sobre h2 {
-  margin-left: 1rem;
+    margin-left: 1rem;
   }
 }
 
@@ -240,8 +234,7 @@
 
 @media screen and (max-width: 768px) {
   section#delivery {
-    height: auto;
-    /* padding: 20px; */
+    height: 50vh;
     padding: 30px;
     margin-top: 40px;
   }
@@ -299,5 +292,13 @@
 @media screen and (max-width: 550px) {
   footer div.footer-content {
     grid-template-columns: auto;
+    margin-right: 60px;
   }
+  footer div.link-topo #link-topo  {
+    bottom: 20px;
+   }
 }
+
+
+
+
