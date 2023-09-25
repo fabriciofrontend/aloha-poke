@@ -12,6 +12,7 @@
 #F24B4B
 
 
+
 /********** FONTS **********/
 /*
 font-family: 'Assistant', sans-serif;
@@ -20,7 +21,7 @@ font-family: 'Roboto', sans-serif;
 font-family: 'Rubik', sans-serif;
 */
 
-/******* GLOBAL ADJUSTMENTS ********/
+/******* GLOBAIS ********/
 * {
   padding: 0;
   margin: 0;
@@ -57,12 +58,12 @@ div.chamada a {
   cursor: pointer;
   font-family: "Rubik", cursive;
 
-  /* animation-name: HeaderA-moveParaCima;
-  animation-duration: 1s;
+  animation-name: BotaoA-moverParaCima;
+  animation-duration: 2s;
   animation-delay: 1s;
   animation-timing-function: ease-out;
   animation-fill-mode: backwards;
-  transition: .3s ease-in-out; */
+  transition: 0.3s ease-in-out;
 }
 
 div.chamada a:hover {
@@ -93,11 +94,11 @@ header {
 header nav#nav-esq {
   width: 100%;
   height: 100px;
-  background: #000;
+  background: #D0F2F2;
 
   display: flex;
   flex-flow: row;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   position: fixed;
 }
@@ -120,14 +121,12 @@ header nav#nav-esq ul#icone-menu {
 
 header nav#nav-esq ul#icone-menu li {
   list-style: none;
-  
-
 }
 
 header nav#nav-esq ul#icone-menu li ion-icon {
   font-size: 30px;
-  color: #f2f2f2;
-  margin-right: 2rem; 
+  color: #000;
+  margin-right: 2rem;
 }
 
 /********** MENU PRINCIPAL **********/
@@ -145,16 +144,17 @@ header nav#nav-esq ul.menu-principal li {
 
 header nav#nav-esq ul.menu-principal li a {
   text-decoration: none;
-  color: #f2f2f2;
+  color: #000;
   text-shadow: 4px 6px 10px #000;
-  font-size: 100%;
+  font-size: 120%;
   padding-bottom: 10px;
   transition: 0.5s ease;
 }
 
 header nav#nav-esq ul.menu-principal li a:hover {
-  border-bottom: 1px solid #f2f2f2;
-  opacity: .6;
+  border-bottom: 1px solid #F24B4B;
+  color: #F24B4B;
+  opacity: 0.6;
 }
 
 /********** CHAMADA **********/
@@ -171,20 +171,20 @@ header div.chamada {
 header div.chamada h1 {
   color: #97bf04;
 
-  /* animation-name: HeaderH1-moverParaDireita;
-  animation-duration: 2s;
-  animation-timing-function: ease-out; */
+  animation-name: HeaderH1-moverParaDireita;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
 }
 
 header div.chamada h2 {
   color: #d0f2f2;
   margin-bottom: 40px;
 
-  /* animation-name: HeaderH1-moverParaEsquerda;
+  animation-name: HeaderH2-moverParaEsquerda;
   animation-duration: 1.5s;
   animation-delay: 0.5s;
   animation-timing-function: ease-out;
-  animation-fill-mode: backwards; */
+  animation-fill-mode: backwards;
 }
 
 /*_____________________________*/
@@ -307,7 +307,6 @@ section#delivery {
   border-bottom: 5px solid #000;
   padding: 50px;
   margin-top: 30px;
-  /* position: relative; */
 }
 
 section#delivery div.delivery-container {
@@ -316,7 +315,6 @@ section#delivery div.delivery-container {
   flex-flow: column;
   justify-content: center;
   margin-bottom: 10px;
-
   text-align: center;
 }
 
@@ -413,7 +411,7 @@ section.contacto div.form-contacto form button:hover {
 /*_____________________________*/
 footer {
   width: 100%;
-  background: #d0f2f2;
+  background: #D0F2F2;
 }
 
 footer div.footer-content {
