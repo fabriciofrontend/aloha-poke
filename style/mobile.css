@@ -251,6 +251,18 @@
     font-size: 30px;
   }
 }
+
+@media screen and (max-width: 365px) {
+
+  /* section#delivery div.delivery-container h1 {
+    font-size: 25px
+  } */
+  section#delivery  div.chamada a  {
+  /* font-size: small; */
+font-size: .5rem;
+  }
+}
+
 /*_____________________________*/
 /*           CONTACTO          */
 /*_____________________________*/
