@@ -24,21 +24,36 @@
   }
 }
 
+@media screen and (max-width: 620px) {
+  header div.chamada h1 {
+    font-size: 65px; /*mudei aqui************************/
+  }
+}
+
 @media screen and (max-width: 555px) {
   header div.chamada h1 {
-    font-size: 80px;
+    font-size: 60px; /*mudei aqui**********************/
   }
   header div.chamada h2 {
     font-size: 20px;
   }
 }
 
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 450px) {
   header div.chamada h1 {
     font-size: 60px;
   }
   header div.chamada h2 {
     font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  header div.chamada h1 {
+    font-size: 50px;
+  }
+  header div.chamada a {
+    font-size: 15px;
   }
 }
 
@@ -86,6 +101,9 @@
   header div.chamada h1 {
     padding-top: 50px;
   }
+  header nav#nav-esq {
+    font-size: 14px; /*mudei aqui****************/
+  }
 }
 /**********************************/
 
@@ -97,7 +115,6 @@
   /*-------MENU HAMBURGUER-------*/
   header nav#nav-esq {
     justify-content: space-between;
-
     padding: 1rem;
   }
 
@@ -113,17 +130,14 @@
   /*--------MENU PRINCIPAL—--------*/
   header nav#nav-esq ul.menu-principal {
     flex-direction: column;
-    width: 60%;
-    height: 40vh;
+    width: 50%;
+    height: 33vh;
     background-color: #d0f2f2;
-
     padding-top: 0.5rem;
     position: absolute;
-
     top: 5.5rem;
     right: 0;
     z-index: 999;
-
     display: none;
   }
 
@@ -180,25 +194,22 @@
 
 @media screen and (max-width: 425px) {
   section.sobre div.sobre-container h3 {
-  font-size: 25px;
+    font-size: 25px;
   }
 }
 
 /*_____________________________*/
 /*           CARDÁPIO          */
 /*_____________________________*/
-
-
 @media screen and (max-width: 1024px) {
   section.cardapio {
     padding-left: 1rem;
   }
-} 
+}
 
 /*_____________________________*/
 /*          DELIVERY           */
 /*_____________________________*/
-
 @media screen and (max-width: 1440) {
   section#delivery div.delivery-container h1 {
     font-size: 150px;
@@ -229,7 +240,7 @@
 }
 
 @media screen and (max-width: 365px) {
-  section#delivery div.chamada a {
+  div.chamada a {
     font-size: 0.5rem;
   }
 }
@@ -237,47 +248,68 @@
 /*_____________________________*/
 /*           CONTACTO          */
 /*_____________________________*/
-
 @media screen and (max-width: 768px) {
   section.contacto {
     flex-direction: column;
     padding: 20px;
   }
 }
-
+@media screen and (max-width: 600px) {
+  section.contacto div.form-contacto {
+    max-width: 400px; /*mudei aqui******************/
+  }
+}
 @media screen and (max-width: 460px) {
   section.contacto div.form-contacto {
     max-width: 300px;
   }
 }
 
+@media screen and (max-width: 340px) {
+  section.contacto div.form-contacto {
+    max-width: 270px;
+  }
+}
 /*_____________________________*/
 /*            FOOTER           */
 /*_____________________________*/
-
+@media screen and (max-width: 1440px) {
+  footer div.link-topo #link-topo {
+    padding: 40px; /*mudei aqui*********************/
+  }
+}
 @media screen and (max-width: 1115px) {
   footer div.link-topo #link-topo {
     font-size: 20px;
   }
-
   footer div.footer-content {
     grid-template-columns: auto auto auto;
 
     margin-left: 50px;
     font-size: 5px;
   }
-
   section.contacto div.form-contacto {
     width: 550px;
   }
 }
-
+@media screen and (max-width: 1024px) {
+  footer div.link-topo #link-topo {
+    padding: 50px; /*mudei aqui*********************/
+  }
+}
+@media screen and (max-width: 620px) {
+  footer div.link-topo #link-topo {
+    padding: 20px; /*mudei aqui*****************/
+  }
+}
 @media screen and (max-width: 550px) {
   footer div.footer-content {
     grid-template-columns: auto;
     margin-right: 60px;
   }
+}
+@media screen and (max-width: 450px) {
   footer div.link-topo #link-topo {
-    bottom: 20px;
+    padding: 20px; /*mudei aqui*****************/
   }
 }
