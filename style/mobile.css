@@ -26,13 +26,13 @@
 
 @media screen and (max-width: 620px) {
   header div.chamada h1 {
-    font-size: 65px; /*mudei aqui************************/
+    font-size: 65px;
   }
 }
 
 @media screen and (max-width: 555px) {
   header div.chamada h1 {
-    font-size: 60px; /*mudei aqui**********************/
+    font-size: 60px;
   }
   header div.chamada h2 {
     font-size: 20px;
@@ -86,32 +86,27 @@
 /*_____________________________*/
 /*           NAVBAR            */
 /*_____________________________*/
-/*responsividade da navbar*/
 @media screen and (max-width: 1110px) {
   header nav#nav-esq ul#menu-principal li a {
     font-size: 90%;
   }
 }
 
-@media screen and (max-width: 970px) {
-}
-/*****************************/
-
 @media screen and (max-width: 768px) {
   header div.chamada h1 {
     padding-top: 50px;
   }
   header nav#nav-esq {
-    font-size: 14px; /*mudei aqui****************/
+    font-size: 14px;
   }
 }
-/**********************************/
 
 /*diminui o tamanho da logo*/
 @media screen and (max-width: 630px) {
   header nav#nav-esq div#logo {
     margin-left: 0.5rem;
   }
+  
   /*-------MENU HAMBURGUER-------*/
   header nav#nav-esq {
     justify-content: space-between;
@@ -122,7 +117,7 @@
     display: flex;
   }
 
-  /*------PARA ANIMAÇÃO NO JS------*/
+  /*------ANIMAÇÃO NO JS------*/
   header nav#nav-esq ul#icone-menu li#menuX {
     display: none;
   }
@@ -256,7 +251,7 @@
 }
 @media screen and (max-width: 600px) {
   section.contacto div.form-contacto {
-    max-width: 400px; /*mudei aqui******************/
+    max-width: 400px;
   }
 }
 @media screen and (max-width: 460px) {
@@ -275,7 +270,7 @@
 /*_____________________________*/
 @media screen and (max-width: 1440px) {
   footer div.link-topo #link-topo {
-    padding: 40px; /*mudei aqui*********************/
+    padding: 40px;
   }
 }
 @media screen and (max-width: 1115px) {
@@ -294,12 +289,12 @@
 }
 @media screen and (max-width: 1024px) {
   footer div.link-topo #link-topo {
-    padding: 50px; /*mudei aqui*********************/
+    padding: 50px;
   }
 }
 @media screen and (max-width: 620px) {
   footer div.link-topo #link-topo {
-    padding: 20px; /*mudei aqui*****************/
+    padding: 20px;
   }
 }
 @media screen and (max-width: 550px) {
@@ -310,6 +305,6 @@
 }
 @media screen and (max-width: 450px) {
   footer div.link-topo #link-topo {
-    padding: 20px; /*mudei aqui*****************/
+    padding: 20px;
   }
 }
