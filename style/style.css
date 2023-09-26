@@ -145,8 +145,7 @@ header nav#nav-esq ul.menu-principal li {
 header nav#nav-esq ul.menu-principal li a {
   text-decoration: none;
   color: #000;
-  text-shadow: 4px 6px 10px #000;
-  font-size: 120%;
+  font-size: 130%;
   padding-bottom: 10px;
   transition: 0.5s ease;
 }
@@ -232,6 +231,7 @@ section.sobre div.sobre-container p {
   margin: auto;
   color: #000;
   font-size: max(16px, 1vw);
+  text-align: left;
 }
 
 section.sobre div.sobre-container img {
@@ -269,7 +269,7 @@ section.cardapio div.cardapio-container h3.cardapio-titulo {
 }
 
 section.cardapio div.cardapio-container p.cardapio-texto {
-  text-align: center;
+  text-align: left;
   font-size: max(15px, 1vw);
   color: #000000;
 }

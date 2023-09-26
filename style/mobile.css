@@ -178,26 +178,22 @@
   }
 }
 
+@media screen and (max-width: 425px) {
+  section.sobre div.sobre-container h3 {
+  font-size: 25px;
+  }
+}
+
 /*_____________________________*/
 /*           CARDÁPIO          */
 /*_____________________________*/
 
-@media screen and (max-width: 1440px) {
-  section.cardapio {
-    margin: 1rem;
-  }
-
-  section.cardapio div.cardapio-container p.cardapio-texto {
-    margin-right: 3rem;
-    text-align: center;
-  }
-}
 
 @media screen and (max-width: 1024px) {
   section.cardapio {
-    margin-left: 1.5rem;
+    padding-left: 1rem;
   }
-}
+} 
 
 /*_____________________________*/
 /*          DELIVERY           */
