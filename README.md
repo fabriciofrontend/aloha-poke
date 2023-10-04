@@ -1,4 +1,4 @@
-
+https://github.com/fabriciofrontend/aloha-poke/assets/133159594/0e0f418c-58c4-4072-9dc9-f08eff6e7308
 
 I'm very excited to share my first personal project.😁🙌
 
